@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item
+        android:id="@+id/rate"
+        android:icon="@drawable/rate"
+        android:title="Rate this app">
+    </item>
+    <item
+        android:id="@+id/publish"
+        android:icon="@drawable/ggplay"
+        android:title="Get more apps">
+    </item>
+
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:background="@drawable/hangman_style_bg"
+    tools:context=".MainActivity" >
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6711318348099993/7131905160"></com.google.android.gms.ads.AdView>
+    <!--"ca-app-pub-6711318348099993/2754796015"-->
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+        <TextView
+            android:id="@+id/winsAndLossesCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="startGame"
+                android:text="START"
+                android:textAlignment="center"
+                android:textColor="#ff0"
+                android:textSize="25dp"
+                android:textStyle="bold"
+
+                android:visibility="visible"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:textColor="#ff0"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:onClick="rateApp"
+                android:text="More from TwinApps"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:focusable="true" />
+
+        </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>
